@@ -1,0 +1,62 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce Prediction</title>
+    <link rel="icon" href="{%static '/img/logo.png'%}">
+    <link rel="stylesheet" href="{%static '/css/form.css'%}">
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    
+    <form id="regForm" action="/result" method="post">
+        <h1>Questions</h1>
+        <!-- One "tab" for each step in the form: -->
+        {% for i in questions %}
+        <div class="tab">
+
+           
+
+            Q{{forloop.counter}}) {{i}}:
+            
+			<p>
+                <br>
+            <input type="radio" id="r1.{{forloop.counter}}" name="q{{forloop.counter}}" value="1" required oninput="this.className = ''"/>
+            
+            <label for="r1.{{forloop.counter}}">Never</label>
+			</p>
+			<p>
+            <input type="radio" id="r2.{{forloop.counter}}" name="q{{forloop.counter}}" value="2"/>
+            <label for="r2.{{forloop.counter}}">Seldom</label>
+			</p>
+			<p>
+            <input type="radio" id="r3.{{forloop.counter}}" name="q{{forloop.counter}}" value="3"/>
+            <label for="r3.{{forloop.counter}}">Averagely</label></p>
+			<p>
+            <input type="radio" id="r4.{{forloop.counter}}" name="q{{forloop.counter}}" value="4"/>
+            <label for="r4.{{forloop.counter}}">Frequently</label></p>
+			<p>
+            <input type="radio" id="r5.{{forloop.counter}}" name="q{{forloop.counter}}" value="5"/>
+            <label for="r5.{{forloop.counter}}">Always</label>
+			</p>
+
+            
+        </div>
+        {% endfor %}
+        <div style="overflow:auto;">
+            <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+        </div>
+    </form>
+    <script src="{%static '/js/form.js'%}"></script>
+
+</body>
+</html>

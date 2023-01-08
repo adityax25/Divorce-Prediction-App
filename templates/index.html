@@ -1,0 +1,493 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Divorce Prediction</title>
+
+  <!-- Favicons -->
+  <link href="{%static '/img/logo.png'%}" rel="icon">
+  <link href="{%static '/img/logo.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <base href="/">
+  <!-- CSS Files -->
+  <link href="{%static '/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static '/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static '/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{%static '/vendor/glightbox/css/glightbox.css'%}" rel="stylesheet">
+  <link href="{%static '/vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{%static '/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{%static '/css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header  -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center">
+        <img src="{%static '/img/logo.png'%}" alt="">
+        <span>Divorce Prediction</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          
+         
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="form">Try it out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Divorce Prediction</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Uncover what makes relationships last or break.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Discover more</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{%static '/img/hero-img.png'%}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h1>What does this web app do?</h1>
+              <br>
+              <p>
+                  Maldives has a divorce rate of 10.97% per 1000 inhabitants per year, Belarus 4.63% and the US 4.34%, and the numbers continue to rise across different regions of the world.
+                  With advancement in data exploration, is it possible to predict whether a marriage will fail or succeed? 
+                  The task is to uncover what makes a relationship last or break.
+
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="form" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Get Started</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{%static '/img/about.jpg'%}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Our Values</h2>
+          <p>A highly developed values system is like a compass. It serves as a guide to point you in the right direction when you are lost.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="{%static '/img/values-1.png'%}" class="img-fluid" alt="">
+              <h3>Teamwork</h3>
+              <p>Our team believes in communication and involvement.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="{%static '/img/values-2.png'%}" class="img-fluid" alt="">
+              <h3>Thinking out of the box</h3>
+              <p>We believe new and innovative ideas are what makes us unique.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="{%static '/img/values-3.png'%}" class="img-fluid" alt="">
+              <h3>Timeliness</h3>
+              <p>We value your time and work with strict deadlines to avoid delays.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Values Section -->
+
+   
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>Veritatis et dolores facere numquam et praesentium</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Nesciunt Mete</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Eosle Commodi</h3>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Ledo Markt</h3>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Asperiores Commodi</h3>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Velit Doloremque.</h3>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+  
+    <!-- ======= Portfolio Section ======= -->
+    <section id="team" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          
+          <p>Our Team</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-fe">Front-end</li>
+              <li data-filter=".filter-be">Back-end</li>
+              <li data-filter=".filter-ai">AI/ML</li>
+              <li data-filter=".filter-c">Cloud</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{%static '/img/fe1.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aditya Mahamuni</h4>
+                <div class="portfolio-links">
+                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-be">
+            <div class="portfolio-wrap">
+              <img src="{%static '/img/be1.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Glen Rodrigues</h4>
+                <div class="portfolio-links">
+                  <a href="https://glenr16.github.io/" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-fe">
+            <div class="portfolio-wrap">
+              <img src="{%static '/img/fe1.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Mahek Intwala</h4>
+                <div class="portfolio-links">
+                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-c">
+            <div class="portfolio-wrap">
+              <img src="{%static '/img/be1.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Omkar Satupe</h4>
+                <div class="portfolio-links">
+                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap">
+              <img src="{%static '/img/fe1.png'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Andre Nazereth</h4>
+                <div class="portfolio-links">
+                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
+            <div class="portfolio-wrap">
+              <img src="{%static '/img/be1.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Ryan Valiaparambil</h4>
+                <div class="portfolio-links">
+                  <a href="#" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Fr. Conceicao Rodrigues College of Engineering,<br>Bandra,<br>Mumbai 400051.</p>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>crcegdsc@gmail.com<br><br></p>
+                  <i class="bi bi-telephone"></i>
+                  <h3>Contact Us</h3>
+                  <p>+91 8652486718<br></p>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="result" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="" class="logo d-flex align-items-center">
+              <img src="{%static '/img/logo.png'%}" alt="">
+              <span>Divorce Prediction</span>
+            </a>
+            <p>Predicting marriage states maybe difficult even for a human. <br> Do not lose hope over the result of this test.</p>
+            <div class="social-links mt-3">
+              <a href="https://crce-gdsc.github.io/" class="link"><i class="bi bi-link"></i></a>
+              <a href="https://twitter.com/gdsc_crce" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/people/GDSC-CRCE/100084689631230/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/gdsc_crce" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/gdsc-crce/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#team">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+            
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Fr. Conceicao Rodrigues College of Engineering <br>
+              Bandra (West), Mumbai 400051,<br>
+              Maharashtra, India. <br><br>
+              
+              <strong>Email:</strong> crcegdsc@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Divorce Prediction</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        An initiative by <a href="https://gdsc.community.dev/fr-conceicao-rodrigues-college-of-engineering-mumbai/">GDSC CRCE</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{%static '/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{%static '/vendor/aos/aos.js'%}"></script>
+  <script src="{%static '/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static '/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{%static '/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{%static '/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{%static '/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{%static '/js/main.js'%}"></script>
+
+</body>
+
+</html>
