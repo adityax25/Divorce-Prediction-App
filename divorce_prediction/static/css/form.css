@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    color: #012970;
+    background-color: #f1f1f1;
+  }
+
+  /* body {
+    background-color: #f1f1f1;
+  } */
+  
+  #regForm {
+    background-color: #ffffff;
+    margin: 90px auto;
+    font-family: "Nunito", sans-serif;
+    padding: 30px;
+    width: 70%;
+    min-width: 300px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    border: 1px solid #aaaaaa;
+  } 
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  } 
+  
+  /* Hide all steps by default: */
+   .tab {
+    display: none;
+  }
+  
+  button {
+    background-color: #4220ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+   
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4220ff;
+  }
+
+  ul li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+  }
+  /* importing google fonts */
+
+  [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: rgb(43, 41, 41);
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #4220ff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
